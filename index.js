@@ -7,7 +7,7 @@ var _ = require('lodash'),
 
 var cli = meow(
 "    Usage" +
-"\n      $ kuma-i18n-strings <command>" +
+"\n      $ kuma-i18n-strings collect|sync" +
 "\n" +
 "\n    Options" +
 "\n      -s, --source         Specify the path where the Xcode files are located" +
