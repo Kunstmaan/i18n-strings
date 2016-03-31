@@ -39,7 +39,7 @@ __Setup Instructions__
   - your JSON key file is generated and downloaded to your machine (__it is the only copy!__)
   - note your service account's email address (also available in the JSON key file)
 
-5. Create a .kuma-i18n configuration file that looks as follows:
+5. Create a .kuma-i18n-strings configuration file that looks as follows:
 
 ```javascript
 {
@@ -81,7 +81,7 @@ $ kuma-i18n-strings sync
 ### Options
 ```bash
 -s, --source         Specify the path where the Xcode files are located
--c, --config         Specify the path to the kuma-i18n configuration file relative to the source path, default .kuma-i18n
+-c, --config         Specify the path to the kuma-i18n configuration file relative to the source path, default .kuma-i18n-strings
 -u, --update-files   Specify if it may update the Localizable files, default false
 -h, --help           Display help
 -v, --version        Display the current version number

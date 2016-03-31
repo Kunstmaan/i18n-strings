@@ -11,7 +11,7 @@ var cli = meow(
 "\n" +
 "\n    Options" +
 "\n      -s, --source         Specify the path where the Xcode files are located" +
-"\n      -c, --config         Specify the path to the kuma-i18n configuration file relative to the source path, default .kuma-i18n" +
+"\n      -c, --config         Specify the path to the kuma-i18n configuration file relative to the source path, default .kuma-i18n-strings" +
 "\n      -u, --update-files   Specify if it may update the Localizable files, default false" +
 "\n      -h, --help           Display help" +
 "\n      -v, --version        Display the current version number" +
