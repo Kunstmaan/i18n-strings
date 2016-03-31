@@ -88,3 +88,7 @@ $ kuma-i18n-strings sync
 ```
 
 When you are using the above commands without ```-u``` or ```--update-files``` it will exit with an exit code of -1 when there are new translations in the online datastore or in the xcode project. This way you can integrate it within your build phases so that building fails when the translations aren't up-to-date.
+
+## Roadmap
+
+* Add Android support, especially for syncing
