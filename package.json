@@ -1,13 +1,13 @@
 {
   "name": "kuma-i18n-strings",
   "version": "1.0.0",
-  "description": "",
+  "description": "CLI utility that helps handling your Localization string files in your Xcode project.",
   "main": "index.js",
   "preferGlobal": true,
   "bin": {
     "kuma-i18n-strings": "index.js"
   },
-  "author": "",
+  "author": "Kunstmaan",
   "license": "MIT",
   "dependencies": {
     "colors": "^1.1.2",
