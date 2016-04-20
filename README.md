@@ -38,8 +38,8 @@ __Setup Instructions__
   - Click blue "Create" button
   - your JSON key file is generated and downloaded to your machine (__it is the only copy!__)
   - note your service account's email address (also available in the JSON key file)
-
-5. Create a .kuma-i18n-strings configuration file that looks as follows:
+5. Share the doc (or docs) with your service account using the email noted above
+6. Create a .kuma-i18n-strings configuration file that looks as follows:
 
 ```javascript
 {
@@ -59,6 +59,8 @@ __Setup Instructions__
 }
 
 ```
+
+For more information about setting up a Service Account look at the [google-spreadsheet npm package](https://github.com/theoephraim/node-google-spreadsheet)
 
 Multiple values are possible for the column names where the values can be found. This way you can use the translation file for multiple platforms. The array should contain the column names sorted by importance. If there is no value found in the first column it will fall back to the next and so on ... 
 
