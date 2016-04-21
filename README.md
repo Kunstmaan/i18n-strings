@@ -5,6 +5,8 @@
 - [x] Optimize build phase if there are missing translations.
 - [x] Sync translations from a shared datastore (for now only Google spreadsheets)
 
+Example project integrating this in the Xcode build process can be found here [i18n-swift-example](https://github.com/Kunstmaan/i18n-swift-example)
+
 ## Installation
 
 ### [npm](https://www.npmjs.com/package/kuma-i18n-strings)
