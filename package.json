@@ -11,10 +11,11 @@
   "license": "MIT",
   "dependencies": {
     "colors": "^1.1.2",
+    "google-spreadsheet": "^2.0.0",
     "i18n-strings-files": "^1.0.1",
     "javascript-natural-sort": "^0.7.1",
     "lodash": "^3.10.1",
     "meow": "^3.6.0",
-    "google-spreadsheet": "^2.0.0"
+    "node-fetch": "^1.7.1"
   }
 }
