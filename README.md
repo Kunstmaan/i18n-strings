@@ -77,7 +77,7 @@ In the column names for the values you can specify the language by adding ```$$L
   "sync": {
     "provider": "url",
     "config": {
-      "url": "https://some.remote.end/point/{{LANG}}.strings",
+      "url": "https://some.remote.end/point/$$LANG$$.strings",
 	    "format": "strings"
 	 }
   }
