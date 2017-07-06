@@ -3,7 +3,7 @@
 ## Features
 - [x] Lookup all translation keys inside your Xcode project.
 - [x] Optimize build phase if there are missing translations.
-- [x] Sync translations from a shared datastore (for now only Google spreadsheets)
+- [x] Sync translations from a shared datastore
 
 Example project integrating this in the Xcode build process can be found here [i18n-swift-example](https://github.com/Kunstmaan/i18n-swift-example)
 
@@ -17,7 +17,9 @@ To install the kuma-i18n-strings cli command globally, you can run the following
 $ npm install -g kuma-i18n-strings
 ```
 
-### Setting up a Google Service Account for syncing with Google Spreadsheets
+### Syncing from Google Spreadsheets
+
+#### Setting up a Google Service Account for syncing with Google Spreadsheets
 
 This is a 2-legged oauth method and designed to be "an account that belongs to your application instead of to an individual end user".
 Use this for an app that needs to access a set of documents that you have full access to.
@@ -43,7 +45,7 @@ __Setup Instructions__
 5. Share the doc (or docs) with your service account using the email noted above
 6. Create a .kuma-i18n-strings configuration file that looks as follows:
 
-```javascript
+```json
 {
   "sync": {
     "provider": "google",
@@ -64,9 +66,25 @@ __Setup Instructions__
 
 For more information about setting up a Service Account look at the [google-spreadsheet npm package](https://github.com/theoephraim/node-google-spreadsheet)
 
-Multiple values are possible for the column names where the values can be found. This way you can use the translation file for multiple platforms. The array should contain the column names sorted by importance. If there is no value found in the first column it will fall back to the next and so on ... 
+Multiple values are possible for the column names where the values can be found. This way you can use the translation file for multiple platforms. The array should contain the column names sorted by importance. If there is no value found in the first column it will fall back to the next and so on ...
 
 In the column names for the values you can specify the language by adding ```$$LANG$$``` this will be replaced by the actual language. For example: ```ios fallback $$LANG$$``` will become ```ios fallback en```.
+
+### Syncing from an endpoint that returns strings files
+
+```json
+{
+  "sync": {
+    "provider": "url",
+    "config": {
+      "url": "https://some.remote.end/point/$$LANG$$.strings",
+	    "format": "strings"
+	 }
+  }
+}
+```
+
+Currently only endpoints returning strings files are supported.
 
 ## Usage
 
